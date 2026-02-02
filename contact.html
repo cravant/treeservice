@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Green Valley Tree Service for a free estimate. Call us or fill out our form for expert tree service.">
+    <title>Contact Us | Green Valley Tree Service</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-icon">🌲</span>
+                        <span class="logo-text">Green Valley Tree Service</span>
+                    </a>
+                </div>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="tel:555-123-4567" class="nav-phone">📞 (555) 123-4567</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get Your Free Estimate</h1>
+            <p>We'll respond within 24 hours (usually much faster)</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Request a Free Estimate</h2>
+                    <p class="form-intro">Fill out the form below and we'll get back to you with a detailed quote. For emergencies, please call us directly.</p>
+                    
+                    <form action="https://formspree.io/f/xqelgewb" method="POST" class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Smith">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Needed *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service...</option>
+                                <option value="tree-removal">Tree Removal</option>
+                                <option value="tree-trimming">Tree Trimming & Pruning</option>
+                                <option value="stump-grinding">Stump Grinding</option>
+                                <option value="emergency">Emergency Storm Damage</option>
+                                <option value="land-clearing">Land Clearing</option>
+                                <option value="tree-health">Tree Health Assessment</option>
+                                <option value="multiple">Multiple Services</option>
+                                <option value="not-sure">Not Sure / Need Advice</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Property Address</label>
+                            <input type="text" id="address" name="address" placeholder="123 Main St, Green Valley, State 12345">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Tell Us About Your Tree Service Needs *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Please describe what you need done, number of trees, approximate size, location on property, any concerns, etc."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="urgent" value="yes">
+                                <span>This is urgent / emergency</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">Send My Request</button>
+
+                        <p class="form-disclaimer">By submitting this form, you agree to be contacted by Green Valley Tree Service regarding your request. We respect your privacy and will never share your information.</p>
+                    </form>
+
+                    <div id="formSuccess" class="form-success" style="display: none;">
+                        <h3>✓ Thank You!</h3>
+                        <p>We've received your request and will contact you within 24 hours. For emergencies, please call us at (555) 123-4567.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-container">
+                    <div class="contact-info-box">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div class="info-content">
+                                <h4>Phone</h4>
+                                <p><a href="tel:555-123-4567" class="phone-link">(555) 123-4567</a></p>
+                                <p class="info-note">Call or text anytime</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">⚡</div>
+                            <div class="info-content">
+                                <h4>Emergency Line</h4>
+                                <p><a href="tel:555-123-4567" class="phone-link">(555) 123-4567</a></p>
+                                <p class="info-note">24/7 for urgent tree emergencies</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">✉️</div>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <p><a href="mailto:info@greenvalleytree.com">info@greenvalleytree.com</a></p>
+                                <p class="info-note">We respond within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">🕐</div>
+                            <div class="info-content">
+                                <h4>Business Hours</h4>
+                                <p>Monday - Saturday<br>7:00 AM - 6:00 PM</p>
+                                <p class="info-note">Emergency service available 24/7</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div class="info-content">
+                                <h4>Service Area</h4>
+                                <p>Green Valley & surrounding areas</p>
+                                <p class="info-note">Within 50 miles of the valley</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-cta-box">
+                        <h3>Why Request an Estimate?</h3>
+                        <ul>
+                            <li>✓ 100% free, no obligation</li>
+                            <li>✓ Clear, detailed pricing</li>
+                            <li>✓ Professional assessment</li>
+                            <li>✓ Expert recommendations</li>
+                            <li>✓ Usually respond same day</li>
+                        </ul>
+                    </div>
+
+                    <div class="emergency-box">
+                        <h3>⚠️ Have an Emergency?</h3>
+                        <p>If you have a tree emergency threatening life or property, don't wait for a call back.</p>
+                        <a href="tel:555-123-4567" class="btn btn-emergency-large">Call Emergency Line Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area Details -->
+    <section class="service-area-details">
+        <div class="container">
+            <h2>Communities We Serve</h2>
+            <p class="service-area-intro">Proudly serving homeowners and businesses throughout the Green Valley region</p>
+            <div class="cities-grid">
+                <div class="city-column">
+                    <ul>
+                        <li>Green Valley</li>
+                        <li>Riverside</li>
+                        <li>Oak Hills</li>
+                        <li>Valley Vista</li>
+                        <li>Mountain View</li>
+                    </ul>
+                </div>
+                <div class="city-column">
+                    <ul>
+                        <li>Greenwood</li>
+                        <li>Cedar Falls</li>
+                        <li>Pine Ridge</li>
+                        <li>Lakeside</li>
+                        <li>Meadowbrook</li>
+                    </ul>
+                </div>
+                <div class="city-column">
+                    <ul>
+                        <li>Hillcrest</li>
+                        <li>Forest Glen</li>
+                        <li>Sunset Heights</li>
+                        <li>Willow Creek</li>
+                        <li>Maple Grove</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="service-area-note">Don't see your city? Call us anyway — we often travel outside our typical service area for the right project.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <h2>Common Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How quickly can you provide an estimate?</h3>
+                    <p>Most estimates are provided within 24 hours. For simpler projects, we can often give you a ballpark figure over the phone and schedule a detailed on-site assessment at your convenience.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer free estimates?</h3>
+                    <p>Yes, all estimates are completely free with no obligation. We'll assess your property, explain what needs to be done, and provide clear pricing before any work begins.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What information helps you give an accurate quote?</h3>
+                    <p>Photos are helpful if you have them. Tell us about tree size (height and trunk diameter if possible), location on your property, proximity to structures or power lines, and what you want done. Don't worry if you're not sure — we'll figure it out together.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How far in advance should I schedule?</h3>
+                    <p>For routine work, we typically book 1-2 weeks out, though sometimes sooner. Emergency services are available 24/7 and we prioritize hazardous situations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Green Valley Tree Service</h3>
+                    <p>Professional tree care since 2009</p>
+                    <p class="footer-license">Licensed & Insured<br>License #12345-A</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#tree-removal">Tree Removal</a></li>
+                        <li><a href="services.html#tree-trimming">Tree Trimming</a></li>
+                        <li><a href="services.html#stump-grinding">Stump Grinding</a></li>
+                        <li><a href="services.html#emergency-service">Emergency Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <p><strong>Phone:</strong> (555) 123-4567</p>
+                    <p><strong>Email:</strong> info@greenvalleytree.com</p>
+                    <p><strong>Hours:</strong> Mon-Sat 7AM-6PM<br>Emergency: 24/7</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Service Area</h4>
+                    <p>Serving all of Green Valley and surrounding communities within 50 miles.</p>
+                    <a href="contact.html" class="footer-cta">Get Free Estimate →</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Green Valley Tree Service. All rights reserved. | This is a demonstration website for portfolio purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
